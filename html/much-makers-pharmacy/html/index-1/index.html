@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <!-- Begin Head -->
+
+  <!-- Mirrored from html.kamleshyadav.com/html/medical-equipments/html/index-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2026 11:29:35 GMT -->
+  <head>
+    <!--=== Required meta tags ===-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--=== custom css ===-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&amp;family=DM+Sans:wght@400;500;700&amp;family=Oswald:wght@400;500;600;700&amp;family=Red+Hat+Display:wght@400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="assets/js/drugs/logo.jpg"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!--=== custom css ===-->
+    <title>Much Maker Nig ltd</title>
+
+    <style>
+      /* Medicine card container */
+      .medicine-card {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        padding: 15px;
+        margin-bottom: 25px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        height: 100%;
+      }
+
+      /* Hover effect */
+      .medicine-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Two images side by side */
+      .medicine-images {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      /* Each image */
+      .medicine-images img {
+        width: 50%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        background: #f5f5f5;
+      }
+
+      /* Info section */
+      .medicine-card .ps-product-info {
+        padding: 0;
+        text-align: left;
+      }
+
+      .medicine-card .ps-product-info h4 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #222;
+        margin: 5px 0;
+        line-height: 1.3;
+      }
+
+      .medicine-card .ps-product-info small {
+        color: #888;
+        font-size: 12px;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .medicine-card .ps-product-info p {
+        font-size: 16px;
+        font-weight: 700;
+        color: #e63946;
+        margin: 6px 0;
+      }
+
+      .medicine-card .ps-product-info p del {
+        color: #999;
+        font-size: 13px;
+        font-weight: 400;
+        margin-left: 6px;
+      }
+
+      .medicine-card .ps-product-info span {
+        font-size: 12px;
+        color: #27ae60;
+        font-weight: 600;
+      }
+      /* Zoom modal overlay (dark full-screen background) */
+      .zoom-modal-overlay {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stays in place even if user scrolls */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85); /* Black at 85% opacity */
+        z-index: 9999; /* Sits above everything else */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        padding: 20px;
+        cursor: zoom-out; /* Cursor hints "click to close" */
+      }
+
+      /* When this class is added, the modal becomes visible */
+      .zoom-modal-overlay.active {
+        display: flex;
+      }
+
+      /* The zoomed image */
+      .zoom-modal-overlay img {
+        max-width: 90%; /* Never wider than 90% of screen */
+        max-height: 90%; /* Never taller than 90% of screen */
+        object-fit: contain; /* Keep original shape, no stretch */
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        background: #fff;
+        animation: zoomIn 0.3s ease; /* Smooth pop-in */
+      }
+
+      /* Smooth pop-in animation */
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      /* The close (×) button */
+      .zoom-modal-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 42px;
+        color: #fff;
+        font-weight: 300;
+        cursor: pointer;
+        line-height: 1;
+        transition: transform 0.2s ease;
+      }
+
+      .zoom-modal-close:hover {
+        transform: scale(1.2);
+        color: #ff4d4d;
+      }
+
+      /* Mobile menu - slide in from the right */
+.ps-navbar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  padding: 30px 20px;
+  padding-top: 80px;
+}
+
+body.menu_open .ps-navbar {
+  right: 0;
+}
+
+.ps-navbar .ps-toggle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ps-navbar .ps-toggle li {
+  border-bottom: 1px solid #eee;
+}
+
+.ps-navbar .ps-toggle li a {
+  display: block;
+  padding: 15px 10px;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ps-navbar .ps-toggle li a:hover {
+  color: #e63946;
+  padding-left: 15px;
+  transition: all 0.2s ease;
+}
+
+/* Only show the mobile menu on small screens */
+@media (min-width: 992px) {
+  .ps-navbar {
+    display: none;
+  }
+}
+
+.ps-navigation-wrapper {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+/* Desktop nav hover effect */
+.nav-hover {
+  transition: color 0.2s ease;
+}
+
+.nav-hover:hover {
+  color: #e63946 !important;   /* Red hover color */
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- top header section start -->
+    <div class="ps-top-header-wrapper">
+      <div class="row">
+        <div class="col-xl-5 col-lg-4 col-md-12">
+          <div class="ps-top-header-left"></div>
+        </div>
+        <div class="col-xl-7 col-lg-8 col-md-12">
+          <div class="ps-top-header-right"></div>
+        </div>
+      </div>
+    </div>
+    <!-- top header section end -->
+
+    <!-- navigation bar start -->
+  <div class="ps-navigation-wrapper">
+  <div class="container-fluid">
+    <div class="row align-items-center py-3">
+
+      <!-- LOGO (left) -->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+        <div class="ps-main-logo">
+          <a href="index.html">
+            <img src="assets/js/drugs/logo.jpg" alt="Much Maker Nig Ltd" />
+          </a>
+        </div>
+      </div>
+
+<!-- COMPANY TITLE + DESKTOP MENU (center) -->
+<div class="col-xl-4 col-lg-4 col-md-12 col-12 d-flex flex-column align-items-center justify-content-center">
+  <h1 class="fw-bold text-uppercase text-dark m-0 display-5 text-center lh-1 text-nowrap">
+    MUCH MAKERS NIG LTD
+  </h1>
+
+  <!-- DESKTOP NAV MENU -->
+  <ul class="d-flex gap-4 list-unstyled mt-4 mb-0">
+    <li><a href="#top" class="text-decoration-none text-dark fw-semibold nav-hover">Home</a></li>
+    <li><a href="#best-seller" class="text-decoration-none text-dark fw-semibold nav-hover">Shop</a></li>
+    <li><a href="#explore-more" class="text-decoration-none text-dark fw-semibold nav-hover">Categories</a></li>
+    <li><a href="#news" class="text-decoration-none text-dark fw-semibold nav-hover">Blog</a></li>
+    <li><a href="#footer" class="text-decoration-none text-dark fw-semibold nav-hover">Contact</a></li>
+  </ul>
+</div>
+
+      <!-- SEARCH + HAMBURGER (right) -->
+     <div class="col-xl-5 col-lg-5 col-md-6 col-6 d-flex justify-content-end align-items-center">
+        <div class="d-flex justify-content-end align-items-center">
+
+          <!-- SEARCH BAR (only on desktop) -->
+          <div class="ps-navigation-header-search me-2 me-lg-3">
+            <div class="ps-navigation-input">
+              <input type="text" placeholder="Search Your Product Here" />
+              <span class="fa fa-search"></span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER BUTTON -->
+          <div class="ps-toggle-btn">
+            <span class="fa fa-bars"></span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE MENU (hidden on desktop, shown when hamburger clicked) -->
+<div class="ps-navbar">
+  <ul class="ps-toggle">
+    <li><a href="#top">Home</a></li>
+    <li><a href="#best-seller">Shop</a></li>
+    <li><a href="#explore-more">Categories</a></li>
+    <li><a href="#news">Blog</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</div>
+
+    <!-- Swiper -->
+    <div class="ps-banner-swiper-main-wrapper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div class="ps-banner-content">
+                    <h5>MUCH MAKERS OFFER UP TO 50% OFF TODAY ONLY!</h5>
+                    <h2>
+                      Flat 5% extra on medicines<br />& Enjoy FREE Delivery
+                    </h2>
+                    <div class="ps-banner-btn">
+                      <a href="javascript:;" class="ps-btn">
+                        <span>SHOP NOW</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div class="ps-banner-content">
+                    <h5>MUCH MAKERS OFFER UP TO 50% OFF TODAY ONLY!!</h5>
+                    <h2>
+                      Flat 5% extra on medicines<br />& Enjoy FREE Delivery
+                    </h2>
+                    <div class="ps-banner-btn">
+                      <a href="javascript:;" class="ps-btn">
+                        <span>SHOP NOW</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div class="ps-banner-content">
+                    <h5>MUCH MAKERS OFFER UP TO 50% OFF TODAY ONLY!</h5>
+                    <h2>
+                      Flat 5% extra on medicines<br />& Enjoy FREE Delivery
+                    </h2>
+                  </div>
+                  <div class="ps-banner-btn">
+                    <a href="javascript:;" class="ps-btn">
+                      <span>SHOP NOW</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ps-banner-slider-btn">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <!-- swiper slider -->
+    <!-- banner section end -->
+    <!-- service section start -->
+    <div class="ps-service-main-wrapper">
+      <div class="container">
+        <div class="ps-service-rectangle">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="ps-service-box">
+                <div class="ps-service-icon ps-service-icon-shipping">
+                  <span>
+                    <svg viewBox="0 0 28 20" width="28" height="20">
+                      <path
+                        id="Shape 11"
+                        class="shp0"
+                        d="M24.68 16.36C24.68 18.37 23.09 20 21.15 20C19.2 20 17.62 18.37 17.62 16.36C17.62 14.36 19.2 12.73 21.15 12.73C23.09 12.73 24.68 14.36 24.68 16.36ZM21.15 18.18C20.17 18.18 19.38 17.37 19.38 16.36C19.38 15.36 20.17 14.55 21.15 14.55C22.12 14.55 22.91 15.36 22.91 16.36C22.91 17.37 22.12 18.18 21.15 18.18ZM12.62 16.36C12.62 18.37 11.03 20 9.09 20C7.14 20 5.56 18.37 5.56 16.36C5.56 14.36 7.14 12.73 9.09 12.73C11.03 12.73 12.62 14.36 12.62 16.36ZM9.09 18.18C8.12 18.18 7.32 17.37 7.32 16.36C7.32 15.36 8.12 14.55 9.09 14.55C10.06 14.55 10.85 15.36 10.85 16.36C10.85 17.37 10.06 18.18 9.09 18.18ZM26.17 7.74L24.59 8.56L22.19 3.64L18.09 3.64L18.09 1.82L22.74 1.82C23.07 1.82 23.37 2.01 23.52 2.32L26.17 7.74ZM11.82 15.48L18.5 15.48L18.5 17.3L11.82 17.3L11.82 15.48ZM7.32 16.39C7.32 16.9 6.93 17.3 6.44 17.3L3.38 17.3C2.9 17.3 2.5 16.9 2.5 16.39C2.5 15.89 2.89 15.48 3.38 15.48L6.44 15.48C6.93 15.48 7.32 15.89 7.32 16.39ZM28 10.48L28 16.39C28 16.9 27.6 17.3 27.12 17.3L23.79 17.3C23.31 17.3 22.91 16.9 22.91 16.39C22.91 15.89 23.31 15.48 23.79 15.48L26.24 15.48L26.24 10.8L24.95 9.09L18.09 9.09C17.6 9.09 17.21 8.68 17.21 8.18L17.21 1.82L3.38 1.82C2.9 1.82 2.5 1.41 2.5 0.91C2.5 0.41 2.89 0 3.38 0L18.09 0C18.58 0 18.97 0.41 18.97 0.91L18.97 7.27L25.38 7.27C25.66 7.27 25.91 7.4 26.08 7.62L27.81 9.93C27.93 10.09 28 10.28 28 10.48ZM7.26 11.79C7.26 12.29 6.87 12.7 6.38 12.7L2.32 12.7C1.84 12.7 1.44 12.29 1.44 11.79C1.44 11.28 1.84 10.88 2.32 10.88L6.38 10.88C6.87 10.88 7.26 11.28 7.26 11.79ZM9.29 8.21C9.29 8.71 8.9 9.12 8.41 9.12L0.88 9.12C0.39 9.12 0 8.71 0 8.21C0 7.71 0.39 7.3 0.88 7.3L8.41 7.3C8.9 7.3 9.29 7.71 9.29 8.21ZM10.74 4.64C10.74 5.14 10.34 5.55 9.85 5.55L2.32 5.55C1.84 5.55 1.44 5.14 1.44 4.64C1.44 4.13 1.84 3.73 2.32 3.73L9.85 3.73C10.34 3.73 10.74 4.13 10.74 4.64Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="ps-service-info">
+                  <h4>Free Shipping</h4>
+                  <p>On all orders</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="ps-service-box">
+                <div class="ps-service-icon ps-service-icon-days">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="29.906"
+                      viewBox="0 0 27 29.906"
+                    >
+                      <path
+                        id="Money_Back"
+                        data-name="Money Back"
+                        d="M800.046,897.352h0a13.28,13.28,0,0,0-7.619-3.917l0.841-.863a0.893,0.893,0,0,0,0-1.24,0.839,0.839,0,0,0-1.208,0l-2.164,2.22a0.893,0.893,0,0,0,0,1.24l2.163,2.22a0.842,0.842,0,0,0,1.209,0,0.894,0.894,0,0,0,0-1.24l-0.482-.5a12.068,12.068,0,1,1-14.077,11.868,12.222,12.222,0,0,1,2.2-7.041,11.8,11.8,0,0,1,5.624-4.355,0.882,0.882,0,0,0,.517-1.12,0.848,0.848,0,0,0-1.092-.53,13.484,13.484,0,0,0-6.438,4.984,14.123,14.123,0,0,0,1.432,17.855,13.259,13.259,0,0,0,19.092,0A14.1,14.1,0,0,0,800.046,897.352Zm-18.325,9.793a8.781,8.781,0,1,0,8.779-9.006A8.9,8.9,0,0,0,781.721,907.145Zm8.779-7.253a7.255,7.255,0,1,1-7.07,7.253A7.172,7.172,0,0,1,790.5,899.892Zm-0.9,11.824v0.263a0.855,0.855,0,1,0,1.709,0v-0.353a2.774,2.774,0,0,0,1.087-.639,3.028,3.028,0,0,0,.9-1.709,2.659,2.659,0,0,0-1.756-3,7.217,7.217,0,0,1-1.835-.873,0.564,0.564,0,0,1-.107-0.512,0.775,0.775,0,0,1,.494-0.613,1.381,1.381,0,0,1,1.275.189,0.841,0.841,0,0,0,1.2-.177,0.892,0.892,0,0,0-.173-1.227,3.06,3.06,0,0,0-1.085-.516v-0.235a0.855,0.855,0,1,0-1.709,0V902.6a2.492,2.492,0,0,0-1.677,1.966,2.283,2.283,0,0,0,.732,2.216,8.314,8.314,0,0,0,2.319,1.146,0.9,0.9,0,0,1,.641,1.059A1.186,1.186,0,0,1,790.448,910a1.978,1.978,0,0,1-1.464-.392,0.842,0.842,0,0,0-1.183.254,0.891,0.891,0,0,0,.247,1.213A3.425,3.425,0,0,0,789.6,911.716Z"
+                        transform="translate(-777 -891.094)"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="ps-service-info">
+                  <h4>30 days returns</h4>
+                  <p>30 Days Moneyback guarantee</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="ps-service-box ps-service-responsive">
+                <div class="ps-service-icon ps-service-icon-offer">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23.63"
+                      height="27.188"
+                      viewBox="0 0 23.63 27.188"
+                    >
+                      <path
+                        id="Gift"
+                        d="M1079.89,903.212l-2.66-.97a3.219,3.219,0,1,0-4.17-4.9l-1.84,1.626-0.36-2.439a3.215,3.215,0,0,0-5.08-2.126,3.25,3.25,0,0,0-1.26,3.2l-2.51-.914a2.382,2.382,0,0,0-3.05,1.426l-1.08,2.989a0.8,0.8,0,0,0,.47,1.019c0.17,0.06,12.22,4.458,12.39,4.522h-11.96a0.791,0.791,0,0,0-.79.8v11.132a2.38,2.38,0,0,0,2.38,2.385h15.85a2.387,2.387,0,0,0,2.38-2.385V909.51l0.61,0.224a0.8,0.8,0,0,0,1.02-.476l1.08-2.988A2.39,2.39,0,0,0,1079.89,903.212Zm-13.98,16.152h-5.54a0.8,0.8,0,0,1-.8-0.8V908.232h6.34v11.132Zm3.18,0h-1.59V908.232h1.59v11.132Zm5.02-20.836a1.633,1.633,0,1,1,.52,2.764c-1.04-.382-1.53-0.56-2.58-0.942Zm-7.39-2.845a1.624,1.624,0,0,1,2.57,1.077l0.41,2.731-2.58-.941A1.641,1.641,0,0,1,1066.72,895.683Zm0.37,7.933-7.45-2.72,0.81-2.241a0.8,0.8,0,0,1,1.02-.476c0.83,0.305,6.45,2.354,6.7,2.448Zm2.98,1.088-1.49-.544,1.08-2.989,1.49,0.544Zm6.94,13.865a0.791,0.791,0,0,1-.79.8h-5.55V908.232h4.43l1.91,0.7v9.638Zm2.81-12.843-0.81,2.241-7.45-2.719,1.08-2.989,6.71,2.447A0.8,0.8,0,0,1,1079.82,905.726Z"
+                        transform="translate(-1057.84 -893.781)"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="ps-service-info">
+                  <h4>Offer & gift</h4>
+                  <p>Offer & Gift on all orders over</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="ps-service-box ps-service-responsive"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service section end -->
+    <!-- ad section start -->
+    <div class="ps-ad-section-main-wrapper">
+      <div class="container-fluid">
+        <div class="ps-ad-wapper">
+          <div class="row ps-ad-resp-wrp">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="ps-ad-box">
+                <a href="javascript:;">
+                  <img src="assets/js/drugs/IMG_014.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="ps-ad-box">
+                <a href="javascript:;">
+                  <img src="assets/js/drugs/IMG_010.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="ps-ad-box ps-ad-responsive">
+                <a href="javascript:;">
+                  <img src="assets/js/drugs/IMG_008.jpg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ad section end -->
+
+    <!-- best seller section start -->
+    <div class="ps-best-seller-main-wrapper" id="best-seller">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="ps-best-seller-heading">
+              <h4>Best Seller</h4>
+            </div>
+          </div>
+          <div id="product-grid" class="row"></div>
+        </div>
+      </div>
+    </div>
+    <!-- best seller section end -->
+
+    <!-- deal of the week section start -->
+    <div class="ps-deal-main-wrapper" id="explore-more">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="ps-best-seller-heading">
+              <h4>Explore more</h4>
+            </div>
+          </div>
+        </div>
+        <div class="ps-deal-parent">
+          <div class="ps-deal-left-ad">
+            <img src="assets/images/deal-left-ad.png" />
+          </div>
+          <div class="ps-deal-box-parent">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_026.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_022.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_030.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_031.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_025.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_024.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_019.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="ps-product-box">
+                  <div class="ps-product-img">
+                    <img src="assets/js/drugs/IMG_015.jpg" class="zoomable" />
+                    <div class="ps-product-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- deal of the week section end -->
+    <!-- testimonial slider start -->
+    <div class="ps-testmonial-slider-wrapper">
+      <div class="container">
+        <div class="col-lg-12 col-md-12">
+          <div class="ps-testml-slider-heading">
+            <h4>Our Clients Feedbacks</h4>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ps-testm-slider-box">
+                <div class="ps-testm-heading-parent">
+                  <div class="ps-testm-slider-img`">
+                    <img src="assets/images/client-1.png" />
+                  </div>
+                  <div class="ps-testm-name">
+                    <h4>Elizabeth Andrew</h4>
+                    <p>Driver</p>
+                  </div>
+                </div>
+                <div class="ps-testm-inner-box">
+                  <p>
+                    We provide quality products and reliable services designed
+                    to meet your everyday needs. Our goal is to make your
+                    shopping experience simple, convenient, and trustworthy.
+                    With carefully selected products and excellent customer
+                    service, we are committed to giving you the best value and
+                    satisfaction every time you shop with us.
+                  </p>
+                </div>
+                <div class="ps-testm-quote">
+                  <img src="assets/images/quote.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ps-testm-slider-box">
+                <div class="ps-testm-heading-parent">
+                  <div class="ps-testm-slider-img`">
+                    <img src="assets/images/client-2.png" />
+                  </div>
+                  <div class="ps-testm-name">
+                    <h4>Leonard Simon</h4>
+                    <p>software Enginner</p>
+                  </div>
+                </div>
+                <div class="ps-testm-inner-box">
+                  <p>
+                    I have been very satisfied with the quality of the products
+                    I purchased. Everything was properly packaged, and the
+                    service was excellent from start to finish. The products are
+                    reliable, affordable, and easy to purchase. I would
+                    definitely recommend them to anyone looking for quality
+                    healthcare products and dependable service.
+                  </p>
+                </div>
+                <div class="ps-testm-quote">
+                  <img src="assets/images/quote.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ps-testm-slider-box">
+                <div class="ps-testm-heading-parent">
+                  <div class="ps-testm-slider-img`">
+                    <img src="assets/images/client-3.png" />
+                  </div>
+                  <div class="ps-testm-name">
+                    <h4>Maria Tracey</h4>
+                    <p>Lecturer</p>
+                  </div>
+                </div>
+                <div class="ps-testm-inner-box">
+                  <p>
+                    The products are of excellent quality, and I was impressed
+                    with how quickly my order was handled. Everything arrived
+                    properly packaged and in good condition. The customer
+                    service was also helpful and professional throughout the
+                    process. I am happy with my experience and will certainly
+                    shop here again.
+                  </p>
+                </div>
+                <div class="ps-testm-quote">
+                  <img src="assets/images/quote.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ps-testm-slider-box">
+                <div class="ps-testm-heading-parent">
+                  <div class="ps-testm-slider-img`">
+                    <img src="assets/images/client-1.png" />
+                  </div>
+                  <div class="ps-testm-name">
+                    <h4>Elizabeth Andrew</h4>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+                <div class="ps-testm-inner-box">
+                  <p>
+                    I am really pleased with the quality and variety of products
+                    available. Ordering was simple, and the entire process was
+                    smooth and convenient. The products were carefully packaged
+                    and delivered as expected. Their commitment to quality and
+                    customer satisfaction is impressive, and I would gladly
+                    recommend their services.
+                  </p>
+                </div>
+                <div class="ps-testm-quote">
+                  <img src="assets/images/quote.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ps-testm-slider-box">
+                <div class="ps-testm-heading-parent">
+                  <div class="ps-testm-slider-img`">
+                    <img src="assets/images/client-2.png" />
+                  </div>
+                  <div class="ps-testm-name">
+                    <h4>Leonard Simon</h4>
+                    <p>store keeper</p>
+                  </div>
+                </div>
+                <div class="ps-testm-inner-box">
+                  <p>
+                    My experience has been excellent from the moment I placed my
+                    order. The products are well presented, properly packaged,
+                    and offered at reasonable prices. I also received great
+                    customer service throughout the process. It is reassuring to
+                    find a trusted store that genuinely cares about quality and
+                    customer satisfaction.
+                  </p>
+                </div>
+                <div class="ps-testm-quote">
+                  <img src="assets/images/quote.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial slider end -->
+
+    <!-- news section start -->
+    <div class="ps-news-main-wrapper" id="news">
+      <div class="container">
+        <div class="row ps-news-row-parent">
+          <div class="col-lg-12 col-md-12">
+            <div class="ps-testml-slider-heading">
+              <h4>Latest News From Our Hospital Customers</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="ps-news-box">
+              <div class="ps-news-inner">
+                <div class="ps-news-img">
+                  <img src="assets/images/news-1.png" />
+                  <div class="ps-news-overlay"></div>
+                  <div class="ps-news-date-btn">
+                    <a href="javascript:;">Sept. 21, 2026</a>
+                  </div>
+                </div>
+                <div class="ps-news-content">
+                  <h4>Your Health, Our Priority</h4>
+                  <p>
+                    We have been very impressed with the quality of the products
+                    supplied to our hospital. The medicines are reliable,
+                    properly packaged, and consistently meet our expectations.
+                    Your professional service and commitment to quality make it
+                    easy for us to trust your products and continue working with
+                    you.
+                  </p>
+
+                  <div class="ps-banner-btn ps-news-btn">
+                    <a href="javascript:;" class="ps-btn">
+                      <span>SHOP NOW</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="ps-news-box">
+              <div class="ps-news-inner">
+                <div class="ps-news-img">
+                  <img src="assets/images/news-2.png" />
+                  <div class="ps-news-overlay"></div>
+                  <div class="ps-news-date-btn">
+                    <a href="javascript:;">Sept. 21, 2026</a>
+                  </div>
+                </div>
+                <div class="ps-news-content">
+                  <h4>Trusted Healthcare Products</h4>
+                  <p>
+                    We have been very satisfied with the quality of the
+                    medicines and healthcare products supplied to our hospital.
+                    The products are well packaged, dependable, and consistently
+                    meet the standards we expect. Your excellent customer
+                    service and commitment to quality have made us confident in
+                    choosing your products for our patients.
+                  </p>
+                  <div class="ps-banner-btn ps-news-btn">
+                    <a href="javascript:;" class="ps-btn">
+                      <span>SHOP NOW</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="ps-news-box ps-news-box-last">
+              <div class="ps-news-inner">
+                <div class="ps-news-img">
+                  <img src="assets/images/news-3.png" />
+                  <div class="ps-news-overlay"></div>
+                  <div class="ps-news-date-btn">
+                    <a href="javascript:;">sept 21, 2026</a>
+                  </div>
+                </div>
+                <div class="ps-news-content">
+                  <h4>Quality Medicines You Can Trust</h4>
+                  <p>
+                    The quality of the medicines and healthcare products we
+                    receive has been excellent. Every order is carefully
+                    handled, properly packaged, and delivered with great
+                    attention to detail. Your reliable service and dedication to
+                    providing quality products have earned our trust, and we are
+                    happy to continue working with you.
+                  </p>
+                  <div class="ps-banner-btn ps-news-btn">
+                    <a href="javascript:;" class="ps-btn">
+                      <span>ORDER NOW</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- news section end -->
+    <!-- partners section start -->
+    <div class="ps-partner-main-wrapper">
+      <div class="container">
+        <div class="ps-testml-slider-heading ps-partner-heading">
+          <h4>Our Trusted Partners</h4>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/partner-1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-5.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-6.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/partner-1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partners section end -->
+    <!-- footer section start -->
+    <div class="ps-footer-main-wrapper" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12"></div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="ps-footer-link">
+              <h4>Our social Media Links</h4>
+              <ul>
+                <li><a href="javascript.html">whatsApp</a></li>
+                <li><a href="javascript.html">TWitter/X</a></li>
+                <li><a href="javascript.html">LInkedin</a></li>
+                <li><a href="javascript.html">Instagram</a></li>
+                <li><a href="javascript.html">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="ps-footer-link">
+              <h4>Store Location</h4>
+            </div>
+            <div class="ps-footer-addres">
+              <span class="fa fa-map-marker"></span>
+              <p>
+                MUCH MAKERS NIG LTD <br />
+                NO 60a iga idungaran street idumota Lagos
+              </p>
+            </div>
+            <div class="ps-footer-addres">
+              <span class="fa fa-clock-o"></span>
+              <p>Mondya - Friday: 8am - 4pm<br />Saturday: 9am - 5pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+
+    <!-- image zoom modal start -->
+    <div id="zoom-modal" class="zoom-modal-overlay">
+      <span class="zoom-modal-close">&times;</span>
+      <img id="zoom-modal-img" src="" alt="Zoomed medicine" />
+    </div>
+    <!-- image zoom modal end -->
+
+    <!-- sign in popup start -->
+    <div class="ps-signin-popup-wrapper">
+      <div class="ps-signin-popup-inner">
+        <span class="close">&times;</span>
+        <div class="ps-signin-popup-logo">
+          <img src="assets/images/logo.svg" />
+        </div>
+        <div class="ps-signin-popup-heading">
+          <h1>Welcome back to<br /><span> Medical Equipment</span></h1>
+          <p>Sign in to your account below.</p>
+        </div>
+        <div class="ps-input-field-parent">
+          <div class="ps-popup-input-field">
+            <input type="email" placeholder="Email" />
+            <span class="fa fa-envelope-o"></span>
+          </div>
+          <div class="ps-popup-input-field">
+            <input type="Password" placeholder="Password" />
+            <span class="fa fa-unlock-alt"></span>
+          </div>
+          <div class="ps-popup-signin-btn">
+            <a href="javascript:;" class="signinbtn ps-btn">
+              <span>Sign In</span></a
+            >
+            <p>
+              Don't Have An Account?
+              <span><a href="#" class="register"> Register Now</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign in popup end -->
+    <!-- register popup start -->
+    <div class="ps-signin-popup-wrapper ps-register-popup_open">
+      <div class="ps-signin-popup-inner ps-register-popup-inner">
+        <span class="close">&times;</span>
+        <div class="ps-signin-popup-logo">
+          <img src="assets/images/logo.svg" />
+        </div>
+        <div class="ps-signin-popup-heading">
+          <h1>Welcome to<br /><span> Much Makers Nig. LTD</span></h1>
+          <p>To Keep Connected With Us Please Enter Your Information Below.</p>
+          .
+        </div>
+        <div class="ps-input-field-parent">
+          <div class="ps-popup-input-field">
+            <input type="name" placeholder="Name" />
+            <span class="fa fa-user-o"></span>
+          </div>
+          <div class="ps-popup-input-field">
+            <input type="email" placeholder="Email" />
+            <span class="fa fa-envelope-o"></span>
+          </div>
+          <div class="ps-popup-input-field">
+            <input type="Password" placeholder="Password" />
+            <span class="fa fa-unlock-alt"></span>
+          </div>
+          <div class="ps-popup-signin-btn">
+            <a href="javascript:;" class="signinbtn ps-btn">
+              <span>Register</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- register popup end -->
+    <!-- Bottom To Top -->
+    <div class="ps_top_icon">
+      <a id="button" class="show">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="18"
+          viewBox="0 0 23 18"
+        >
+          <path
+            d="M13.825,18.000 C10.772,18.000 7.928,16.517 6.217,14.033 C5.870,13.530 6.006,12.845 6.519,12.505 C7.032,12.165 7.729,12.297 8.076,12.801 C9.369,14.678 11.518,15.799 13.825,15.799 C17.647,15.799 20.757,12.749 20.757,9.000 C20.757,5.251 17.647,2.200 13.825,2.200 C11.512,2.200 9.359,3.326 8.067,5.212 C7.721,5.717 7.024,5.851 6.510,5.512 C5.996,5.173 5.859,4.489 6.205,3.985 C7.915,1.490 10.763,-0.000 13.825,-0.000 C18.884,-0.000 23.000,4.037 23.000,9.000 C23.000,13.963 18.884,18.000 13.825,18.000 ZM11.293,6.704 C10.902,6.313 10.902,5.679 11.293,5.287 C11.683,4.896 12.316,4.896 12.707,5.287 L15.706,8.291 C15.730,8.315 15.752,8.339 15.772,8.365 C15.777,8.371 15.782,8.377 15.787,8.384 C15.802,8.403 15.817,8.423 15.831,8.443 C15.835,8.449 15.838,8.455 15.842,8.462 C15.856,8.483 15.869,8.505 15.881,8.527 C15.883,8.532 15.886,8.537 15.888,8.541 C15.901,8.566 15.913,8.590 15.923,8.616 C15.925,8.619 15.925,8.622 15.927,8.626 C15.938,8.653 15.948,8.680 15.956,8.708 C15.957,8.712 15.958,8.715 15.959,8.719 C15.967,8.747 15.974,8.774 15.980,8.803 C15.982,8.812 15.982,8.820 15.984,8.829 C15.988,8.852 15.992,8.876 15.995,8.900 C15.998,8.933 16.000,8.966 16.000,9.000 C16.000,9.033 15.998,9.067 15.995,9.100 C15.992,9.124 15.988,9.148 15.984,9.172 C15.982,9.180 15.982,9.189 15.980,9.197 C15.974,9.226 15.967,9.254 15.959,9.282 C15.958,9.285 15.957,9.288 15.956,9.292 C15.948,9.320 15.938,9.348 15.927,9.375 C15.925,9.378 15.925,9.381 15.923,9.384 C15.913,9.410 15.901,9.435 15.888,9.459 C15.886,9.464 15.883,9.468 15.881,9.473 C15.869,9.495 15.856,9.517 15.842,9.539 C15.838,9.545 15.835,9.551 15.831,9.557 C15.817,9.577 15.802,9.597 15.787,9.616 C15.782,9.623 15.777,9.629 15.772,9.636 C15.752,9.661 15.730,9.685 15.707,9.708 L12.707,12.712 C12.511,12.908 12.256,13.006 12.000,13.006 C11.744,13.006 11.488,12.908 11.293,12.712 C10.902,12.321 10.902,11.688 11.293,11.296 L12.586,10.001 L1.000,10.001 C0.448,10.001 -0.000,9.553 -0.000,9.000 C-0.000,8.447 0.448,7.998 1.000,7.998 L12.586,7.998 L11.293,6.704 Z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <!-- Bottom To Top -->
+    <!-- copyright section start -->
+    <div class="ps-copyright-wrapper">
+      <p>
+        Copyright © 2026 <a href="index.html">Much Makers Nig LTD</a>. All
+        Reserved.
+      </p>
+    </div>
+    <!-- copyright section end -->
+    <!--=== Optional JavaScript ===-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/medicines.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!--=== Optional JavaScript ===-->
+  </body>
+
+  <!-- Mirrored from html.kamleshyadav.com/html/medical-equipments/html/index-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2026 11:29:56 GMT -->
+</html>
